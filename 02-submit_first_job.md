@@ -22,3 +22,11 @@ In this lesson, we walk through an entire example explaining as we go.  In order
 
 To get started, log in to your HPC system.  You should have a terminal window open waiting for your input.
 
+
+Next, we'll download the example submission files:
+   wget --no-check-certificate https://github.com/dbrunson/hpc-novice/raw/gh-pages/examples.tar
+
+And extract the files:
+   tar xvf examples.tar
+
+
