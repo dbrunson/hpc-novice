@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HPC-novice
-subtitle: submit first job
+subtitle: Submit first job
 minutes: 15
 ---
 > ## Learning Objectives {.objectives}

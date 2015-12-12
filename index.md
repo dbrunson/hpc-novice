@@ -20,7 +20,7 @@ This lesson hopes to provide and easy onramp to HPC systems.
 ## Topics
 
 1.  [Logging in](01-logging_in.html)
-
+2.  [Submit first job](02-submit_first_job.html)
 
 ## Other Resources
 
