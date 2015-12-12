@@ -71,6 +71,14 @@ When you log in, you are on a login node. Remember, an HPC system actually a net
 
 Login nodes are for logging in, working with files, and for submitting jobs. Always submit jobs to the scheduler, and never run a job from a login node. We will explain job submission more thoroughly later in this tutorial.
 
+### Logging Out ###
+
+To log out just type:
+
+    $ exit
+	
+You can also use the key combination Ctrl-D.
+
 ###Using the Mouse###
 
 When logged into like we have here, you are using a terminal so you mouse does not do anything. All commands are typed and interaction with the computer is text based. The one exception is that your mouse can be used to copy and paste. If you highlight any text in the terminal (putty only, use your usual copy and paste on Linux and Mac) with your mouse it is automatically copied. To paste it either right click (in putty) or click the middle button/scroll wheel of your mouse.
@@ -78,6 +86,10 @@ When logged into like we have here, you are using a terminal so you mouse does n
 ###Why Use a Terminal?###
 
 So why use a terminal? Wouldn't it be easier if HPC systems had a graphical user interface (GUI) with buttons and a mouse like most modern personal computers? While there is a steep learning curve associated with using a terminal, terminal based computer systems are ideally suited for certain types of computing. Consider a research scientist who has data files containing the results of their research. Each run of the experiment contains data from that run and in the course of their research, the scientist must make a change to each one of the files. If there are only twenty data files then clicking on each file to open it and change it, while time consuming is doable. However, what does the scientist do for an experiment that has 200 runs, or even 2,000? Unless they employ a lot of graduate students, our poor researcher will not be able to complete their research in a timely manner. The terminal has a nice set of features that allows us to automate such tasks so that the computer does the work for us. We will talk more about these options later. Remember, while the terminal has a steep learning curve, it is an investment that pays itself back later by saving you time.
+
+### Using more than one terminal at a time ###
+
+Somtimes you will want to be able to edit files or do work in different locations in the file system at the same time.  Rather than repeatedly moving back and forth, you can open another terminal exactly as described above.
 
 You're now ready to move on to (put next lesson link here).
 
