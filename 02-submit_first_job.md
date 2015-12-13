@@ -119,4 +119,64 @@ The file `helloworld.pbs` is called a **submission script**.
 
 > ## spaces{.callout}
 >
-> You'll thank yourself later if you never use spaces in filenames or directory names.  The underscore is a great substitute.  
+> You'll thank yourself later if you never use spaces in filenames or directory names.  The underscore is a great substitute.
+
+
+Let's look at the jobs running on the cluster.  (Cluster is another word for HPC system.)
+
+~~~{.bash}
+$ showq
+~~~
+
+
+***NOTE:***   The `showq -u` and `qpeek` commands are not much use for this extremely short hello world example.  If you do a longer example later, postpone these unil then.  
+
+If you just want to see your jobs (if any):
+
+~~~{.bash}
+$ showq -u yourusername
+~~~
+
+If you have a long job running (which we don't) you can check on the output with `qpeek`, but you'll need to know your job id number.  If you forgot, use `showq -u yourusername` to see it.  Suppose your job id number is `412343`, just type:
+
+~~~{.bash}
+$ qpeek 412343
+~~~
+
+
+
+
+Let's take a look at the contents of the submission script `helloworld.pbs`. The three most common ways to do this are with one of these commands: `cat`, `more`,and `less`.  You could also open it in a text editor, such as `nano`, `vim`, or `emacs.`
+
+
+~~~{.bash}
+$ cat helloworld.pbs
+~~~
+
+~~~{.output}
+#!/bin/bash
+
+# This is a comment that is just for humans to read
+# Lines starting with #PBS are instructions to the scheduler
+
+# Select the queue you want:
+#PBS -q express
+
+# Request the number of nodes and the number of
+# processors per node
+#PBS -l nodes=1:ppn=1
+
+# Request the maximum time that your job could possibly need
+#PBS -l walltime=10:00
+
+#  This line puts all the output that would have gone to the screen
+#  into a single file.  Some schedulers do this by default.
+#PBS -j oe
+
+#  This makes sure your job starts in the same directory as
+#  where you submitted the job.
+cd $PBS_O_WORKDIR
+
+# This is the command to run a simple job
+./helloworld.sh
+~~~
