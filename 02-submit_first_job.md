@@ -177,7 +177,7 @@ $ cat helloworld.pbs
 #  where you submitted the job.
 cd $PBS_O_WORKDIR
 
-# This is the command to run a job
+# This is the command to run a job 
 ./helloworld.sh
 ~~~
 
