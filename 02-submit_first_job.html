@@ -35,6 +35,7 @@
 <div class="panel-body">
 <ul>
 <li>Submit the hello world example</li>
+<li>First exposure to some linux commands</li>
 <li>Explain concepts involved</li>
 </ul>
 </div>
@@ -47,6 +48,14 @@
 <li>Monitor job progress (if desired)</li>
 <li>Log out (and potentially wait for an email saying your job finished)</li>
 </ul>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>Good citizenship</h2>
+</div>
+<div class="panel-body">
+<p>HPC systems are usually shared among large groups of people. This is why it is important to make sure that you use the scheduler rather than running processes on the login nodes. Low impact activities such as editing files, creating job scripts and submitting jobs are fine. If you accidently start a process and need to stop it quickly you can use <code>Ctrl-C</code> to kill it. Some login nodes will automatically kill your process if it uses too many resources on the login nodes and you may get a strong request from your HPC provider to be more careful.</p>
+</div>
+</aside>
 <p>Doing these things in a linux terminal requires several (but not that many) commands to move files around, edit files and work with the scheduler.</p>
 <p>In this lesson, we walk through an entire example explaining as we go. In order to have our example job finish quickly, we’ll submit a prepared script and discuss its contents while the job runs.</p>
 <p>To get started, log in to your HPC system. You should have a terminal window open waiting for your input.</p>

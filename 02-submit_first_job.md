@@ -6,7 +6,8 @@ minutes: 15
 ---
 > ## Learning Objectives {.objectives}
 >
-> *   Submit the hello world example 
+> *   Submit the hello world example
+> *   First exposure to some linux commands
 > *   Explain concepts involved
 
 The typical workflow on an HPC system involves the following steps:
@@ -16,6 +17,10 @@ The typical workflow on an HPC system involves the following steps:
 * Prepare job submission script and submit the job
 * Monitor job progress (if desired)
 * Log out (and potentially wait for an email saying your job finished)
+
+> ## Good citizenship {.callout}
+>
+>  HPC systems are usually shared among large groups of people. This is why it is important to make sure that you use the scheduler rather than running processes on the login nodes.  Low impact activities such as editing files, creating job scripts and submitting jobs are fine.  If you accidently start a process and need to stop it quickly you can use `Ctrl-C` to kill it. Some login nodes will automatically kill your process if it uses too many resources on the login nodes and you may get a strong request from your HPC provider to be more careful.
 
 Doing these things in a linux terminal requires several (but not that many) commands to move files around, edit files and work with the scheduler.
 
