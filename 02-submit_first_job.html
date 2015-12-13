@@ -96,6 +96,34 @@
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">cd</span> examples
 $ <span class="kw">ls</span></code></pre>
 <pre class="output"><code>helloworld.pbs  helloworld.sh</code></pre>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>A note on schedulers</h2>
+</div>
+<div class="panel-body">
+<p>There are several schedulers in use on different HPC systems, but they all are fundamentally the same. We’ll go over this in more detail later, but they all will require you to request walltime, the number of nodes, and a few other things followed by the commands to run your job. The most popular schedulers are Slurm, Grid Engine, and Torque/PBS.</p>
+</div>
+</aside>
+<p>Since a scheduled job make take some time to complete, we’ll go ahead and submit this hello world job now so it can be working while we learn about the files.</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">qsub</span> helloworld.pbs</code></pre>
+<p>The output from this command will include your <strong>job id number</strong>.</p>
+<p>The file <code>helloworld.pbs</code> is called a <strong>submission script</strong>.</p>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>On filenames</h2>
+</div>
+<div class="panel-body">
+<p>Linux does not care about file extensions. (In Windows, for example. the extions <code>.exe</code> signifies an executible file.) In Linux, it is good practice to use meaningful filenames to make your job of reading them and remembering what they are easier. Here we use, by convention or convenience, the extension <code>.pbs</code> for a PBS submission script and <code>.sh</code> for a bash script. Also remember that filenames are case sensitive.</p>
+</div>
+</aside>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>spaces</h2>
+</div>
+<div class="panel-body">
+<p>You’ll thank yourself later if you never use spaces in filenames or directory names. The underscore is a great substitute.</p>
+</div>
+</aside>
         </div>
       </div>
       </article>

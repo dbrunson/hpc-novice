@@ -64,12 +64,28 @@
 <li>Double click on <em>Terminal</em>.</li>
 </ul>
 <p>Now that you have launched the terminal, follow the same directions as logging in with a Linux computer.</p>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>The command prompt</h2>
+</div>
+<div class="panel-body">
+<p>In these lessons, the command prompt is shown as <code>$</code> and indicates that the terminal is waiting for you to type your next command. In reality, your command prompt will have some text preceding the <code>$</code> which may include your username, the name of the computer, the directory you are in, and more depending on the way it is configured.</p>
+</div>
+</aside>
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>Case sensitivity</h2>
+</div>
+<div class="panel-body">
+<p>Everything in linux is case sensistive, including your username and password. For example, <code>my_input_data.txt</code> is <strong><em>not</em></strong> the same as <code>My_Input_Data.txt</code></p>
+</div>
+</aside>
 <h2 id="changing-your-password">Changing your Password</h2>
 <p>The first time you log in, you should change your password from the default password assigned when your account was created to a more secure (and easier to remember) password of your choosing. Type the following and hit enter:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">passwd</span></code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">passwd</span></code></pre>
 <p>You should see the following text (for the purposes of this tutorial we will use the example user name monkey):</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">Changing</span> password for user monkey.
-<span class="kw">Current</span> Password:</code></pre>
+<pre class="output"><code>Changing password for user monkey.
+Current Password:</code></pre>
 <p>Type in your current password (currently the default password assigned to you) and hit &lt;enter&gt;. You will then be prompted to enter a new password twice. From now on, you will log into the system with this new password. Please choose a <strong>STRONG</strong> password.</p>
 <h2 id="logging-out">Logging Out</h2>
 <p>To log out just type:</p>

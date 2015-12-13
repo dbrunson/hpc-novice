@@ -48,6 +48,15 @@ Since the Macintosh OS is based off of Unix just like Linux, logging into Cowboy
 
 Now that you have launched the terminal, follow the same directions as logging in with a Linux computer.
 
+> ## The command prompt {.callout}
+>
+> In these lessons, the command prompt is shown as `$` and indicates that the terminal is waiting for you to type your next command.  In reality, your command prompt will have some text preceding the `$` which may include your username, the name of the computer, the directory you are in, and more depending on the way it is configured.
+
+> ## Case sensitivity {.callout}
+>
+>  Everything in linux is case sensistive, including your username and password.  For example, `my_input_data.txt` is ***not*** the same as `My_Input_Data.txt`
+
+
 
 
 Changing your Password
@@ -55,12 +64,12 @@ Changing your Password
 The first time you log in, you should change your password from the default password assigned when your account was created to a more secure (and easier to remember) password of your choosing. Type the following and hit enter:
 
 ~~~ {.bash}
-passwd
+$ passwd
 ~~~
 
 You should see the following text (for the purposes of this tutorial we will use the example user name monkey):
 
-~~~ {.bash}
+~~~ {.output}
 Changing password for user monkey.
 Current Password:
 ~~~

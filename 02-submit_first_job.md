@@ -98,3 +98,25 @@ $ ls
 helloworld.pbs  helloworld.sh
 ~~~
 
+> ## A note on schedulers{.callout}
+>
+> There are several schedulers in use on different HPC systems, but they all are fundamentally the same.  We'll go over this in more detail later, but they all will require you to request walltime, the number of nodes, and a few other things followed by the commands to run your job. The most popular schedulers are Slurm, Grid Engine, and Torque/PBS. 
+
+
+Since a scheduled job make take some time to complete, we'll go ahead and submit this hello world job now so it can be working while we learn about the files.
+
+~~~{.bash}
+$ qsub helloworld.pbs
+~~~
+
+The output from this command will include your **job id number**.
+
+The file `helloworld.pbs` is called a **submission script**.
+
+> ## On filenames{.callout}
+>
+>  Linux does not care about file extensions. (In Windows, for example. the extions `.exe` signifies an executible file.)  In Linux, it is good practice to use meaningful filenames to make your job of reading them and remembering what they are easier.  Here we use, by convention or convenience, the extension `.pbs` for a PBS submission script and `.sh` for a bash script. Also remember that filenames are case sensitive.
+
+> ## spaces{.callout}
+>
+> You'll thank yourself later if you never use spaces in filenames or directory names.  The underscore is a great substitute.  
