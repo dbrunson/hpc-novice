@@ -11,10 +11,13 @@ This lesson hopes to provide and easy onramp to HPC systems.
 > ## Prerequisites {.prereq}
 >
 > Learners will need an account on an HPC system and desktop or laptop.
+> Specifically learners need:
+> * hostname of HPC system to log into
+> * username and password
 > 
 
 > ## Getting ready {.getready}
-> You will need the hostname of the HPC system, your username and password.
+> All you need is a laptop or desktop computer running Windows, MacOS or Linux.
 >
 
 ## Topics
