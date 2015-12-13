@@ -12,6 +12,7 @@ This lesson hopes to provide and easy onramp to HPC systems.
 >
 > Learners will need an account on an HPC system and desktop or laptop.
 > Specifically learners need:
+>
 > * hostname of HPC system to log into
 > * username and password
 > 
